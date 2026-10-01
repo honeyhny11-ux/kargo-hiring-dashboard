@@ -1,0 +1,139 @@
+{
+  "notes": "Built from the application CVs of 8 past hires (5 Exceeds, 2 Meets, 1 Below). The case gives ratings only, no interview notes or performance reviews, so these patterns come from what the CVs show. Small sample: correlation, not proof. Two things deliberately NOT used: (1) Product-manager titles or years: only 2 of the 8 were PMs, one Exceeds (Lavanya) and one Meets (Vikram), so PM experience did not predict success. (2) Credentials and pedigree: the weaker hires had the most polished credentials (MBA, CPO certification, conference talks, well-known colleges), so these are not rewarded. Headline numbers (ARR, pipeline, uptime) also appear on every CV and did not separate the groups.",
+  "PM": [
+    {
+      "name": "Ground-level operations experience",
+      "description": "Has worked inside freight, logistics or a similar operations-heavy business, doing the work rather than selling or building software for it from a distance: shipment documentation, customs, carrier or port coordination, 3PL planning, handling live exceptions.",
+      "weight": 30,
+      "anchors": {
+        "1": "No hands-on operations experience; knows the domain only as a vendor, integrator or not at all.",
+        "3": "Some hands-on operations work, or deep day-to-day contact with operations teams in a customer-facing role.",
+        "5": "Years inside freight or logistics operations, handling real volume and real exceptions, e.g. customs holds or peak-period documentation."
+      },
+      "source_hires": ["Rohan", "Sunita", "Aditya", "Meghna", "Lavanya"],
+      "contrast": "All five Exceeds hires worked inside freight or logistics operations (CHA, forwarder documentation, port services, 3PL planning). None of the weaker hires did. Preetham integrated with 3PLs only through APIs, and Vikram and Rahul came from HR tech and fintech."
+    },
+    {
+      "name": "Builds fixes nobody asked for, and others adopt them",
+      "description": "Notices a broken or missing process, builds a fix without being asked, and the wider team or other teams take it up as the standard.",
+      "weight": 25,
+      "anchors": {
+        "1": "Only delivered assigned work.",
+        "3": "Built one improvement beyond their brief that was used by their own team.",
+        "5": "Repeatedly spotted gaps nobody owned, built the fix unprompted, and it was adopted beyond their own work."
+      },
+      "source_hires": ["Rohan", "Sunita", "Aditya", "Meghna", "Lavanya"],
+      "contrast": "Exceeds hires built unassigned fixes that spread: Rohan's Excel tracker (12-person team) and weekend BL-verification prototype, Sunita's weekend workflow redesign, Meghna's onboarding checklist, Lavanya's visibility dashboard (2 other teams), and Aditya's loss post-mortem (now standard practice). The weaker hires' improvements (Vikram's PRD template, Rahul's content programme, Preetham's dashboard) sat inside their own function's normal remit."
+    },
+    {
+      "name": "Delivers without a support structure",
+      "description": "Gets results with lean resources and no layer of managers, specialists or extra headcount: sole owner, independent consultant, self-sourced pipeline, absorbing more volume without new hires.",
+      "weight": 20,
+      "anchors": {
+        "1": "Always worked inside large, well-resourced teams with defined roles.",
+        "3": "Some periods of working with little support or covering extra scope.",
+        "5": "Repeatedly the only owner, delivering more with no extra headcount and no layer between them and the problem."
+      },
+      "source_hires": ["Rohan", "Sunita", "Aditya", "Meghna", "Lavanya"],
+      "contrast": "Rohan absorbed 18 months of higher volume with no new headcount, Meghna covered 8 extra accounts alone, Sunita works independently, Lavanya is the sole PM, and Aditya built his territory from a cold list. Vikram worked in a 4-PM team and Preetham in a 12-engineer team at a 3,200-person company. Rahul had autonomy but scaled by hiring a team."
+    },
+    {
+      "name": "Works directly with operational users",
+      "description": "Spends time with the people doing the work (operations teams, forwarder staff, importers and exporters) and turns what they see into specific changes.",
+      "weight": 15,
+      "anchors": {
+        "1": "No direct contact with end users.",
+        "3": "Regular direct contact with users, but few examples of it changing what was built or done.",
+        "5": "Repeatedly turned first-hand observation of operational users into a specific change with a result."
+      },
+      "source_hires": ["Rohan", "Sunita", "Aditya", "Meghna", "Lavanya"],
+      "contrast": "Rohan turns field requirements into specs with no product layer, Lavanya's discovery session with forwarders led to a 60% ticket drop, and Meghna, Sunita and Aditya were the direct contact for operators. Vikram ran 40+ interviews, but with HR buyers, not operational users. Rahul and Preetham show no direct user work."
+    },
+    {
+      "name": "Owns failures and learns from them",
+      "description": "Writes up what went wrong, kills work that isn't working, and changes practice as a result, instead of listing only successes.",
+      "weight": 10,
+      "anchors": {
+        "1": "The CV lists only successes; no sign of handling failure.",
+        "3": "One example of owning a problem or reversing a decision.",
+        "5": "Clear examples of killing work on evidence, or running post-mortems that changed how the team works."
+      },
+      "source_hires": ["Lavanya", "Aditya", "Meghna"],
+      "contrast": "Lavanya killed 2 features on usage data and wrote the outage post-mortem, Aditya documented why a 4-month deal was lost, and Meghna owned a product limitation through a 6-week fix. The weaker hires' CVs list only wins."
+    }
+  ],
+  "SPM": [
+    {
+      "name": "Ground-level operations experience",
+      "description": "Has worked inside freight, logistics or a similar operations-heavy business, doing the work rather than selling or building software for it from a distance.",
+      "weight": 25,
+      "anchors": {
+        "1": "No hands-on operations experience.",
+        "3": "Some hands-on operations work, or deep daily contact with operations teams.",
+        "5": "Years inside freight or logistics operations, handling real volume and exceptions."
+      },
+      "source_hires": ["Rohan", "Sunita", "Aditya", "Meghna", "Lavanya"],
+      "contrast": "All five Exceeds hires worked inside operations; none of the three weaker hires did."
+    },
+    {
+      "name": "Makes hard calls on systems and owns the consequences",
+      "description": "Has made consequential decisions about platforms, integrations, vendors or data (migrations, build-versus-configure, what to stop), carried them through, and been accountable for the result.",
+      "weight": 20,
+      "anchors": {
+        "1": "Executed decisions made by others.",
+        "3": "Made and delivered at least one significant system or integration decision.",
+        "5": "Repeatedly made consequential platform or integration calls under pressure and owned the outcome."
+      },
+      "source_hires": ["Rohan", "Lavanya", "Sunita"],
+      "contrast": "Rohan chose and led the migration off an unreliable data vendor (no data loss, 60% less lag), Lavanya owns carrier integration and made calls her engineering lead 'trusted immediately', and Sunita led a client's migration to a cloud FMS. Preetham (Below) had the strongest technical record but worked on assigned scope inside a large platform team, so technical depth alone didn't predict success."
+    },
+    {
+      "name": "Builds fixes nobody asked for, and others adopt them",
+      "description": "Notices a broken or missing process, builds a fix without being asked, and it becomes the standard for others.",
+      "weight": 20,
+      "anchors": {
+        "1": "Only delivered assigned work.",
+        "3": "One unassigned improvement used by their own team.",
+        "5": "Repeatedly built unprompted fixes adopted beyond their own work."
+      },
+      "source_hires": ["Rohan", "Sunita", "Aditya", "Meghna", "Lavanya"],
+      "contrast": "Every Exceeds hire built an unassigned fix that others adopted. The weaker hires' improvements stayed within their function's normal remit."
+    },
+    {
+      "name": "Delivers without a support structure",
+      "description": "Gets results as the only owner, with lean resources and no management layer.",
+      "weight": 15,
+      "anchors": {
+        "1": "Always inside large, well-resourced teams.",
+        "3": "Some periods of working with little support.",
+        "5": "Repeatedly the sole owner, delivering more with no extra headcount."
+      },
+      "source_hires": ["Rohan", "Sunita", "Aditya", "Meghna", "Lavanya"],
+      "contrast": "Exceeds hires worked as sole owners or absorbed extra scope alone. Vikram and Preetham worked in large, structured teams."
+    },
+    {
+      "name": "Raises the standard for the people around them",
+      "description": "Creates practices, procedures or coaching that others adopt and that measurably improve the team: review processes, SOPs, training that leads to promotions.",
+      "weight": 10,
+      "anchors": {
+        "1": "No evidence of shaping how others work.",
+        "3": "Mentored others or introduced one practice.",
+        "5": "Introduced practices the team kept, with measurable effect, and developed people who grew."
+      },
+      "source_hires": ["Rohan", "Sunita", "Meghna", "Aditya"],
+      "contrast": "Rohan's code review and on-call cut P1 incidents by 40%, Sunita's SOPs were adopted in full and her trainee became a team lead, Meghna's 30-60-90 framework is used by the whole CS team, and Aditya's post-mortem became standard practice. The weaker hires show some of this (Vikram's template, Preetham's mentoring, Rahul hiring a team), so this is the weakest signal and has the lowest weight."
+    },
+    {
+      "name": "Owns failures and learns from them",
+      "description": "Writes up what went wrong, kills work that isn't working, and changes practice as a result.",
+      "weight": 10,
+      "anchors": {
+        "1": "The CV lists only successes.",
+        "3": "One example of owning a problem or reversing a decision.",
+        "5": "Clear examples of killing work on evidence or running post-mortems that changed practice."
+      },
+      "source_hires": ["Lavanya", "Aditya", "Meghna"],
+      "contrast": "Lavanya killed features on data and ran the outage post-mortem, and Aditya documented a lost deal. The weaker hires' CVs list only wins."
+    }
+  ]
+}
